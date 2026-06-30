@@ -1,0 +1,1060 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+#logo{
+ margin-left:100px;
+ margin-right:900px;
+ height:80px;
+ width:80px;
+ border-radius:100%;
+}
+
+#navbar{
+    height:90px;
+    width:100%;
+    background-color:maroon;
+    color:white;
+    display:flex;
+    line-height:100px;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    margin-right:50px;
+}
+a:hover{
+    color:rgb(16, 174, 202);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(152, 41, 4);
+    min-width: 120px;
+    text-align: center;
+    line-height: normal;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: normal;
+}
+.dropdown-content a:hover{
+    color:rgb(68, 0, 255);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#content{
+    background-color:white;
+    height:1050px;
+}
+
+#content img {
+    width:100%;
+    height: 450px;
+}
+
+
+
+#services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:40px;
+    
+}
+
+
+
+
+
+#box{
+     border-radius:10px;
+      top:200px;
+      position:absolute;
+      text-align:center;
+      right:600px;
+      width:400px;
+      background-color:rgb(7, 218, 238);
+}
+#box h1{
+    color:white;
+}
+
+
+#about-box{
+    position:absolute;
+    top:600px;
+    right:200px;
+    width:300px;
+    padding:25px;
+    background-color:rgb(238, 9, 32);
+    
+}
+#about-box h2{
+    color:black;
+    text-align:center;
+    text-decoration:underline;
+}
+#about-box p{
+    color:black;
+    font-size:20px;
+}
+
+
+
+
+#footer{
+    background-color:black;
+    height:150px;
+    width:100%;
+    
+}
+#links{
+    top:150px;
+    color:rgb(16, 174, 202);
+    font-size:20px;
+    text-align:left;
+    margin-right:20px;
+    border:1px solid black;
+    width:200px;
+    padding:10px;
+}
+#links h3{
+    margin-bottom:10px;
+}
+
+#links a{
+    color:orange;
+    font-size:17px;
+    margin-bottom:100px;
+}
+.footer-line{
+    width:100%;
+    height:1px;
+    background-color:white;
+    
+}
+
+#footer p{
+    color:turquoise;
+    text-align:center;
+}
+/* ===========================
+      PREMIUM GALLERY PAGE
+=========================== */
+
+.gallery-page{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HERO */
+
+.gallery-hero{
+    height:250px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnjMga9VOZUNcA5SuekoqKhsPfwSVOOB1JolPrskSjw&s=10");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-bottom:40px;
+    color:white;
+}
+
+.gallery-hero h1{
+    font-size:45px;
+    color:gold;
+    text-shadow:2px 2px 8px black;
+}
+
+.gallery-hero p{
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* GRID GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* IMAGES */
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    border:3px solid gold;
+    transition:0.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+    border-color:white;
+    box-shadow:0 15px 30px rgba(255,215,0,.5);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.gallery-hero{
+    height:200px;
+}
+
+.gallery-hero h1{
+    font-size:30px;
+}
+
+.gallery{
+    grid-template-columns:1fr;
+}
+
+}
+
+#aboutus{
+    background-color:rgb(238, 9, 32);
+}
+#contact{
+    background-color:rgb(7, 218, 238);
+}
+
+#images img{
+    height:400px;
+    width:400px;
+    margin-left:300px;
+}
+
+
+.content-box{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin:20px;
+    padding:15px;
+    border:1px solid #ddd;
+    background-color:aqua;
+    border-radius:10px;
+}
+
+.content-box img{
+    width:180px;
+    height:120px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.content-text h3{
+    margin-bottom:8px;
+    color:darkred;
+}
+
+
+
+/*History.html*/
+#history{
+    width:90%;
+    margin:80px auto;
+    background:white;
+    border-radius:20px;
+    padding:50px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.history-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.history-title h2{
+    font-size:42px;
+    color:#b30000;
+    font-family:Georgia, serif;
+    letter-spacing:1px;
+}
+
+.line{
+    width:120px;
+    height:5px;
+    background:linear-gradient(to right,#ff9800,#d32f2f);
+    margin:15px auto;
+    border-radius:10px;
+}
+
+.history-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.history-text{
+    flex:1;
+}
+
+.history-text p{
+    font-size:19px;
+    line-height:1.9;
+    text-align:justify;
+    color:#444;
+    margin-bottom:20px;
+}
+
+.history-image{
+    flex:1;
+    text-align:center;
+}
+
+.history-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    transition:.5s;
+}
+
+.history-image img:hover{
+    transform:scale(1.05);
+}
+
+@media(max-width:900px){
+
+.history-container{
+    flex-direction:column;
+}
+
+.history-title h2{
+    font-size:34px;
+}
+
+.history-text p{
+    font-size:17px;
+}
+
+}
+
+
+/*Manasha Puja*/
+/* ===========================
+   PREMIUM MANASHA CONTENT ONLY
+   =========================== */
+
+#Manasha{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Hero Section */
+
+#Manasha .hero{
+    height:350px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://cdn.shopify.com/s/files/1/0901/3588/8184/files/Maa_Kamakhya_Temple_-_A_Mystical_Wonder_of_Assam.jpg?v=1749053108");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+#Manasha .overlay h1{
+    font-size:55px;
+    color:gold;
+    text-shadow:3px 3px 8px black;
+}
+
+#Manasha .overlay p{
+    font-size:22px;
+    margin-top:15px;
+}
+
+/* Glass Cards */
+
+#Manasha .glass{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    border-radius:18px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
+
+#Manasha .glass:hover{
+    transform:translateY(-5px);
+    transition:.4s;
+}
+
+#Manasha .glass h2{
+    color:rgb(255, 0, 0);
+    margin-bottom:15px;
+    border-left:5px solid gold;
+    padding-left:15px;
+    font-size:30px;
+}
+
+#Manasha .glass p{
+    font-size:18px;
+    line-height:32px;
+    text-align:justify;
+    color:#000000;
+}
+
+/* Gallery */
+
+#Manasha .gallery-title{
+    text-align:center;
+    font-size:38px;
+    color:rgb(255, 0, 0);
+    margin:50px 0 30px;
+}
+
+#Manashaimgs{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+#Manashaimgs img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    border:4px solid gold;
+    transition:.5s;
+    cursor:pointer;
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+
+#Manashaimgs img:hover{
+    transform:scale(1.08);
+    border-color:white;
+    box-shadow:0 20px 40px rgba(255,215,0,.6);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+#Manasha .hero{
+    height:220px;
+}
+
+#Manasha .overlay h1{
+    font-size:35px;
+}
+
+#Manasha .overlay p{
+    font-size:18px;
+}
+
+#Manasha .glass{
+    padding:20px;
+}
+
+#Manasha .glass h2{
+    font-size:24px;
+}
+
+#Manasha .glass p{
+    font-size:16px;
+    line-height:28px;
+}
+
+#Manashaimgs{
+    grid-template-columns:1fr;
+}
+
+}
+
+/* ambubachi */
+/* ===========================
+      AMBUBACHI PREMIUM
+=========================== */
+
+#ambubachi{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    color:white;
+}
+
+/* Hero */
+
+#ambubachi .hero{
+
+    height:350px;
+
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://upload.wikimedia.org/wikipedia/commons/c/c2/Ambubachi_Mela_at_Kamakhya_Temple_by_Vikramjit_Kakati.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+#ambubachi .overlay{
+
+    text-align:center;
+
+}
+
+#ambubachi .overlay h1{
+
+    font-size:55px;
+
+}
+
+#ambubachi .overlay p{
+
+    font-size:22px;
+    color:#000000;
+
+}
+
+/* Glass Cards */
+
+#ambubachi .glass{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+#ambubachi .glass:hover{
+
+    transform:translateY(-5px);
+
+    transition:.4s;
+
+}
+
+#ambubachi .glass h2{
+
+    color:rgb(255, 0, 0);
+
+    border-left:5px solid gold;
+
+    padding-left:15px;
+
+    margin-bottom:15px;
+
+}
+#ambubachi h2{
+    color:#f80101
+}
+
+#ambubachi .glass p{
+
+    font-size:18px;
+    color:#000000;
+
+    line-height:32px;
+
+    text-align:justify;
+
+}
+
+/* Image */
+
+.image-box{
+
+    margin:25px 0;
+
+}
+
+.image-box img{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+
+/* Gallery */
+
+.gallery-title{
+
+    text-align:center;
+
+    color:gold;
+
+    font-size:36px;
+
+    margin:40px 0;
+
+}
+
+#ambubachiimgs{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:25px;
+
+}
+
+#ambubachiimgs img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:4px solid gold;
+
+    transition:.5s;
+
+}
+
+#ambubachiimgs img:hover{
+
+    transform:scale(1.06);
+
+    border-color:white;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+#ambubachi .hero{
+
+height:220px;
+
+}
+
+#ambubachi .overlay h1{
+
+font-size:35px;
+
+}
+
+#ambubachi .overlay p{
+
+font-size:18px;
+
+}
+
+#ambubachi .glass{
+
+padding:20px;
+
+}
+
+#ambubachiimgs{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+/*Durja puja*/
+/* ===========================
+      DURGA PUJA PREMIUM
+=========================== */
+
+#Durgapuja{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    color:#ffffff;
+}
+
+/* HERO */
+
+#Durgapuja .hero{
+    height:350px;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCmo-6JY995AwzKx4b-tmzfR8TPwheNqoaMrF7JuaqfA_BM4APod8w-bfm&s=10");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-bottom:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+
+#Durgapuja .overlay h1{
+    font-size:55px;
+    color:rgb(237, 233, 9);
+    text-shadow:3px 3px 8px black;
+}
+
+#Durgapuja .overlay p{
+    font-size:22px;
+}
+
+/* GLASS CARDS */
+
+#Durgapuja .glass{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    padding:35px;
+    border-radius:20px;
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+#Durgapuja h2{
+     color:#ff0000;
+}
+#Durgapuja .glass h2{
+    color:rgb(243, 3, 3);
+    border-left:5px solid rgb(232, 224, 4);
+    padding-left:15px;
+    margin-bottom:15px;
+}
+
+#Durgapuja .glass p{
+    font-size:18px;
+    line-height:32px;
+    text-align:justify;
+    color:#000000;
+}
+
+/* GALLERY */
+
+#durjapujaimgs{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:20px;
+}
+
+#durjapujaimgs img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    border:4px solid rgb(255, 247, 0);
+    transition:.5s;
+}
+
+#durjapujaimgs img:hover{
+    transform:scale(1.06);
+    border-color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+#Durgapuja .hero{
+    height:220px;
+}
+
+#Durgapuja .overlay h1{
+    font-size:35px;
+}
+
+#Durgapuja .overlay p{
+    font-size:18px;
+}
+
+#Durgapuja .glass{
+    padding:20px;
+}
+
+#durjapujaimgs{
+    grid-template-columns:1fr;
+}
+
+}
+
+/* ==========================
+     PREMIUM DARSHAN PAGE
+========================== */
+
+#darshan{
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Banner */
+
+#darshan .darshan-banner{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://sevensandstourism.com/wp-content/uploads/2026/03/Kamakhya-Temple-7-Amazing-Story-and-History-Maa-Kamakhya-1024x683.png");
+    background-size:cover;
+    background-position:center;
+    height:280px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    margin-bottom:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+#darshan .darshan-banner h1{
+    font-size:48px;
+    color:gold;
+    text-shadow:2px 2px 8px black;
+}
+
+#darshan .darshan-banner p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* Timing Card */
+
+#darshan .timing-card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+#darshan .timing-card h2{
+    text-align:center;
+    color:#b71c1c;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+#darshan .timing-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 10px;
+    border-bottom:1px solid #ddd;
+    font-size:18px;
+}
+
+#darshan .timing-row:last-child{
+    border-bottom:none;
+}
+
+#darshan .timing-row:hover{
+    background:#fff8dc;
+    transition:.3s;
+}
+
+/* Note */
+
+#darshan .note-box{
+    margin-top:35px;
+    background:#fff3cd;
+    border-left:6px solid gold;
+    padding:25px;
+    border-radius:15px;
+}
+
+#darshan .note-box h3{
+    color:#b71c1c;
+    margin-bottom:10px;
+}
+
+#darshan .note-box p{
+    line-height:30px;
+    color:#333;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+#darshan .darshan-banner{
+    height:220px;
+}
+
+#darshan .darshan-banner h1{
+    font-size:34px;
+}
+
+#darshan .timing-row{
+    flex-direction:column;
+    gap:8px;
+    text-align:center;
+}
+
+}
+
+
+
+#about{
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+#about h1{
+    text-align: center;
+    background: #b30000;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Layout */
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Image */
+.about-image img{
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
+
+.about-image img:hover{
+    transform: scale(1.05);
+}
+
+/* Content box */
+.about-content{
+    width: 50%;
+    background: rgb(4, 233, 214);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Mobile view */
+@media(max-width: 768px){
+    .about-content{
+        width: 90%;
+    }
+
+    .about-image img{
+        width: 90%;
+    }
+}
+
+#contact{
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+#contact h1{
+    text-align: center;
+    background: #b30000;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Center container */
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Premium box */
+.contact-box{
+    width: 50%;
+    height:200px;
+    background: rgb(95, 207, 25);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: 0.4s;
+}
+
+.contact-box:hover{
+    transform: translateY(-8px);
+}
+
+/* Text styling */
+.contact-box h2{
+    color: #b30000;
+    margin-bottom: 20px;
+}
+
+.contact-box p{
+    font-size: 18px;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Mobile view */
+@media(max-width: 768px){
+    .contact-box{
+        width: 90%;
+    }
+}
